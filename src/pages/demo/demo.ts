@@ -111,6 +111,7 @@ export class DemoPage{
         alert(item.title);
         break;
     }
+    
     // this.nav.push(NavigationDetailsPage, { item: item });
   }
   
