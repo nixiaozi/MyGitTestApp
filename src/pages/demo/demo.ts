@@ -3,7 +3,7 @@ import {NavController, NavParams} from 'ionic-angular'
 import { InfiniteScrollPage } from '../infinite-scroll/infinite-scroll';
 // import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {TakePhotosPage} from '../testpages/take-photos/take-photos';
-
+import {SocialSharePage } from '../testpages/social-share/social-share';
 /**
  * Generated class for the DemoPage page.
  *
@@ -106,6 +106,9 @@ export class DemoPage{
         break;
       case NavPageEnum.Camera:
         this.nav.push(TakePhotosPage,{item:item});
+        break;
+      case NavPageEnum.SocailShare:
+        this.nav.push(SocialSharePage,{item:item});
         break;
       default:
         alert(item.title);
