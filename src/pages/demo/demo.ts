@@ -4,6 +4,7 @@ import { InfiniteScrollPage } from '../infinite-scroll/infinite-scroll';
 // import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {TakePhotosPage} from '../testpages/take-photos/take-photos';
 import {SocialSharePage } from '../testpages/social-share/social-share';
+import { GetfileUploadPage } from '../testpages/getfile-upload/getfile-upload';
 /**
  * Generated class for the DemoPage page.
  *
@@ -52,7 +53,7 @@ export class DemoPage{
         'type':NavPageEnum.Camera,
       },
       {
-        'title': '文件管理',
+        'title': '上传文件',
         'icon': 'html5',
         'description': 'The latest version of the web\'s markup language.',
         'color': '#F46529',
@@ -73,25 +74,31 @@ export class DemoPage{
         'type':NavPageEnum.SocailShare,
       },
       {
-        'title': 'NodeJS',
+        'title': '自动更新',
         'icon': 'nodejs',
         'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
         'color': '#78BD43'
       },
       {
-        'title': 'Python',
+        'title': '资源更新',
         'icon': 'python',
         'description': 'A clear and powerful object-oriented programming language!',
         'color': '#3575AC'
       },
       {
-        'title': 'Markdown',
+        'title': '使用浏览器打开链接',
         'icon': 'markdown',
         'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
         'color': '#412159'
       },
       {
-        'title': 'Tux',
+        'title': '获得设备属性',
+        'icon': 'tux',
+        'description': 'The official mascot of the Linux kernel!',
+        'color': '#000'
+      },
+      {
+        'title': '打电话的功能',
         'icon': 'tux',
         'description': 'The official mascot of the Linux kernel!',
         'color': '#000'
@@ -109,6 +116,9 @@ export class DemoPage{
         break;
       case NavPageEnum.SocailShare:
         this.nav.push(SocialSharePage,{item:item});
+        break;
+      case NavPageEnum.FileManager:
+        this.nav.push(GetfileUploadPage,{item:item})
         break;
       default:
         alert(item.title);

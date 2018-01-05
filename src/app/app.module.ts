@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { InfiniteScrollPage } from '../pages/infinite-scroll/infinite-scroll';
 import { TakePhotosPage } from '../pages/testpages/take-photos/take-photos';
 import { SocialSharePage } from '../pages/testpages/social-share/social-share';
+import { GetfileUploadPage } from '../pages/testpages/getfile-upload/getfile-upload';
 
 // 一下是Provider
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MockProvider } from '../pages/infinite-scroll/provider';
 import { Camera } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { FileChooser } from '@ionic-native/file-chooser';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     InfiniteScrollPage, //所有在 entryComponents 中的页面都需要在这里加入引用
     TakePhotosPage,
     SocialSharePage,
+    GetfileUploadPage
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     InfiniteScrollPage,  //所有的页面都需要在 entryComponents 中加入
     TakePhotosPage,
     SocialSharePage,
+    GetfileUploadPage
   ],
   providers: [
     StatusBar,
@@ -53,6 +57,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     MockProvider, //需要在app级别加上引用
     Camera,
     SocialSharing,
+    FileChooser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

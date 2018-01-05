@@ -86,4 +86,5 @@
     <plugin name="cordova.plugin.SocialShareSDK" spec="~0.0.1" />
     <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.2.1" />
+    <plugin name="cordova-plugin-filechooser" spec="^1.0.1" />
 </widget>
